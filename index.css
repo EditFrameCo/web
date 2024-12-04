@@ -1,117 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900');
 
 h1 {
-  font-family: 'Modak', sans-serif;
-  font-size: 2.5rem;
+  font-family: 'Vina Sans', sans-serif;
+  font-size: 65px;
+	font-weight: 10;
   margin: 0;
 }
 
 h4 {
   font-family: 'Inter', sans-serif;
-  font-weight: 14;
+  font-weight: 300;
   font-size: 1rem;
   margin: 10px 0;
-}
-
-hr {
-  width: 50%;
-  margin: 10px auto;
-  border: 0;
-  height: 1px;
-  background: white;
+	font-style: italic;
 }
 
 body {
+  color: white;
+	height: 100%;
   margin: 0;
   font-family: Inter, sans-serif;
-  background: linear-gradient(to bottom right, #2b0033, #050136);
+  background-color: #2a0022;
 }
 
-.top-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 15px 30px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  border-bottom: 3px solid #444;
+.example-vid-img-1 {
+    border-radius: 15px;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform: translate(-50%, -110%) scale(1.05);
+    -webkit-transform: translate(-50%, -110%) scale(1.05);
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    transform-origin: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
 }
 
-.logo img {
-  height: 50px;
+.example-vid-img-1:hover {
+    transform: translate(-50%, -110%) scale(1.2);
+    -webkit-transform: translate(-50%, -110%) scale(1.2);
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
+.example-vid-img-2 {
+    border-radius: 15px;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform: translate(-50%, 0%) scale(1.05);
+    -webkit-transform: translate(-50%, 0%) scale(1.05);
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    transform-origin: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
 }
 
-nav ul li {
-  margin: 0 20px;
-  position: relative;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 8px 16px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-nav a:hover {
-  background-color: #575757;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  transition: opacity 0.3s ease;
-}
-
-.dropdown .dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown .dropdown-content a:hover {
-  background-color: #575757;
-}
-
-@media (max-width: 768px) {
-  .top-bar {
-    padding: 15px 20px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  .logo img {
-    height: 40px;
-  }
+.example-vid-img-2:hover {
+    transform: translate(-50%, 0%) scale(1.2);
+    -webkit-transform: translate(-50%, 0%) scale(1.2);
 }
