@@ -13,13 +13,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-image 1s ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
 
 .banner-content {
   text-align: center;
   color: white;
-  padding: 10px;
+  max-width: 90%; 
+  padding: 0 20px; /* Add horizontal padding */
+  box-sizing: border-box;
+  position: relative;
 }
 
 h1 {
@@ -32,7 +36,7 @@ h4 {
   font-family: 'Inter', sans-serif;
   font-weight: 14;
   font-size: 1rem;
-  margin: 0;
+  margin: 10px 0;
 }
 
 hr {
