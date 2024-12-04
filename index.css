@@ -61,22 +61,27 @@ body {
 	left: 50%;
 }
 
-.example-vid-img-2:hover {
-    transform: translate(-50%, 0%) scale(1.2);
-    -webkit-transform: translate(-50%, 0%) scale(1.2);
-}
-
-a {
+.a {
 	overflow: hidden;
-    transition-duration: 0.2s;
-    transition-property: background-color;
+    transition-duration: 0.15s;
+    transition-property: background-color transform;
+	transform: rotate(1.5deg);
+	-webkit-transform: rotate(1.5deg);
 	border-radius: 784578px; /* That's "STILRY" if you use a dial pad */
 	background-color: #540144;
 	box-shadow: 7px;
 	padding: 7px 40px;
 	cursor: pointer;
+	text-align: center;
 }
 
-a:hover {
+.a:hover {
 	background-color: #760079;
+	transform: rotate(1deg);
+	-webkit-transform: rotate(1deg);
+}
+
+.example-vid-img-2:hover {
+    transform: translate(-50%, 0%) scale(1.2);
+    -webkit-transform: translate(-50%, 0%) scale(1.2);
 }
