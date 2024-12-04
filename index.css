@@ -65,3 +65,18 @@ body {
     transform: translate(-50%, 0%) scale(1.2);
     -webkit-transform: translate(-50%, 0%) scale(1.2);
 }
+
+a {
+	overflow: hidden;
+    transition-duration: 0.2s;
+    transition-property: background-color;
+	border-radius: 784578px; /* That's "STILRY" if you use a dial pad */
+	background-color: #540144;
+	box-shadow: 7px;
+	padding: 7px 40px;
+	cursor: pointer;
+}
+
+a:hover {
+	background-color: #760079;
+}
