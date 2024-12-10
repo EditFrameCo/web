@@ -73,6 +73,7 @@ body {
 	padding: 7px 40px;
 	cursor: pointer;
 	text-align: center;
+	text-decoration: none;
 }
 
 .a:hover {
